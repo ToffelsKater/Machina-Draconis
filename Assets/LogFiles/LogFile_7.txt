@@ -1,0 +1,5 @@
+Testdurchlauf 7
+   Runde 0
+      Turm platziert auf Fundament (10)
+      Turm platziert auf Fundament
+      Turm platziert auf Fundament (3)
