@@ -6650,6 +6650,11 @@ Prefab:
       propertyPath: Wave_Display
       value: 
       objectReference: {fileID: 325445704}
+    - target: {fileID: 114199009767301400, guid: 0e3dc16ebd26b644aa5bb65d6b157e4b,
+        type: 2}
+      propertyPath: Waves.Array.data[0].Amount
+      value: 3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 0e3dc16ebd26b644aa5bb65d6b157e4b, type: 2}
   m_IsPrefabParent: 0
