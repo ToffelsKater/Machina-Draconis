@@ -2100,6 +2100,11 @@ Prefab:
       propertyPath: Refund
       value: 0.75
       objectReference: {fileID: 0}
+    - target: {fileID: 114014599928421180, guid: 630155653b4aae64c93de752e01b9bd1,
+        type: 2}
+      propertyPath: Money
+      value: 200
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 630155653b4aae64c93de752e01b9bd1, type: 2}
   m_IsPrefabParent: 0
@@ -13410,6 +13415,51 @@ Prefab:
         type: 2}
       propertyPath: Waves.Array.data[0].Pause
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114199009767301400, guid: 0e3dc16ebd26b644aa5bb65d6b157e4b,
+        type: 2}
+      propertyPath: Waves.Array.data[3].Amount
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 114199009767301400, guid: 0e3dc16ebd26b644aa5bb65d6b157e4b,
+        type: 2}
+      propertyPath: Waves.Array.data[4].Amount
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 114199009767301400, guid: 0e3dc16ebd26b644aa5bb65d6b157e4b,
+        type: 2}
+      propertyPath: Waves.Array.data[2].Amount
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 114199009767301400, guid: 0e3dc16ebd26b644aa5bb65d6b157e4b,
+        type: 2}
+      propertyPath: Waves.Array.data[5].Amount
+      value: 18
+      objectReference: {fileID: 0}
+    - target: {fileID: 114199009767301400, guid: 0e3dc16ebd26b644aa5bb65d6b157e4b,
+        type: 2}
+      propertyPath: Waves.Array.data[6].Amount
+      value: 21
+      objectReference: {fileID: 0}
+    - target: {fileID: 114199009767301400, guid: 0e3dc16ebd26b644aa5bb65d6b157e4b,
+        type: 2}
+      propertyPath: Waves.Array.data[7].Amount
+      value: 24
+      objectReference: {fileID: 0}
+    - target: {fileID: 114199009767301400, guid: 0e3dc16ebd26b644aa5bb65d6b157e4b,
+        type: 2}
+      propertyPath: Waves.Array.data[8].Amount
+      value: 27
+      objectReference: {fileID: 0}
+    - target: {fileID: 114199009767301400, guid: 0e3dc16ebd26b644aa5bb65d6b157e4b,
+        type: 2}
+      propertyPath: Factor
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114199009767301400, guid: 0e3dc16ebd26b644aa5bb65d6b157e4b,
+        type: 2}
+      propertyPath: Waves.Array.data[9].Pause
+      value: 25
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 0e3dc16ebd26b644aa5bb65d6b157e4b, type: 2}
