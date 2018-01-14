@@ -5977,7 +5977,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2111428767}
-  m_RootOrder: 128
+  m_RootOrder: 126
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &908415894
 SpriteRenderer:
@@ -6730,22 +6730,27 @@ Prefab:
     - target: {fileID: 114199009767301400, guid: 0e3dc16ebd26b644aa5bb65d6b157e4b,
         type: 2}
       propertyPath: Waves.Array.data[5].Amount
-      value: 9
-      objectReference: {fileID: 0}
-    - target: {fileID: 114199009767301400, guid: 0e3dc16ebd26b644aa5bb65d6b157e4b,
-        type: 2}
-      propertyPath: Waves.Array.data[6].Amount
       value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 114199009767301400, guid: 0e3dc16ebd26b644aa5bb65d6b157e4b,
         type: 2}
+      propertyPath: Waves.Array.data[6].Amount
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 114199009767301400, guid: 0e3dc16ebd26b644aa5bb65d6b157e4b,
+        type: 2}
       propertyPath: Waves.Array.data[7].Amount
-      value: 11
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 114199009767301400, guid: 0e3dc16ebd26b644aa5bb65d6b157e4b,
         type: 2}
       propertyPath: Waves.Array.data[8].Amount
-      value: 12
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 114199009767301400, guid: 0e3dc16ebd26b644aa5bb65d6b157e4b,
+        type: 2}
+      propertyPath: Factor
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 0e3dc16ebd26b644aa5bb65d6b157e4b, type: 2}
@@ -11525,6 +11530,11 @@ Prefab:
         type: 2}
       propertyPath: Refund
       value: 0.75
+      objectReference: {fileID: 0}
+    - target: {fileID: 114014599928421180, guid: 630155653b4aae64c93de752e01b9bd1,
+        type: 2}
+      propertyPath: Money
+      value: 250
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 630155653b4aae64c93de752e01b9bd1, type: 2}
@@ -17293,9 +17303,9 @@ Transform:
   - {fileID: 1303125397}
   - {fileID: 1995824770}
   - {fileID: 1143642450}
+  - {fileID: 908415893}
   - {fileID: 19540770}
   - {fileID: 1150018581}
-  - {fileID: 908415893}
   - {fileID: 1452572924}
   - {fileID: 1386206620}
   - {fileID: 1278990149}
