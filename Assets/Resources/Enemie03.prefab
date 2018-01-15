@@ -152,7 +152,7 @@ MonoBehaviour:
   EnemieTier: 3
   Slowed: 0
   speed: 0.5
-  health: 45
+  health: 70
   reward: 15
   SlowTimer: 0
   Damages: 020000000100000005000000
