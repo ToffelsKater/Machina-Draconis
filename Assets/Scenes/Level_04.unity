@@ -375,6 +375,11 @@ Prefab:
       propertyPath: m_FlipY
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 114106299371649904, guid: 2f49b119bf5c8b446a965931ab0f94ef,
+        type: 2}
+      propertyPath: Facing
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 2f49b119bf5c8b446a965931ab0f94ef, type: 2}
   m_IsPrefabParent: 0
@@ -677,6 +682,16 @@ Prefab:
         type: 2}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
       value: PlayOneShot
+      objectReference: {fileID: 0}
+    - target: {fileID: 224841911357988872, guid: 6ac6d29cd88fe0648b1f16c4d7e366e6,
+        type: 2}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 224285669653076062, guid: 6ac6d29cd88fe0648b1f16c4d7e366e6,
+        type: 2}
+      propertyPath: m_AnchorMax.y
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 6ac6d29cd88fe0648b1f16c4d7e366e6, type: 2}
@@ -1317,7 +1332,7 @@ Transform:
   - {fileID: 1822082811}
   - {fileID: 368066861}
   m_Father: {fileID: 0}
-  m_RootOrder: 12
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &608907581
 GameObject:
@@ -2243,7 +2258,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4134339198082176, guid: 7703e6ffb171f9d4e8ee699f67a1029b, type: 2}
       propertyPath: m_RootOrder
-      value: 8
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 7703e6ffb171f9d4e8ee699f67a1029b, type: 2}
@@ -6536,7 +6551,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4898642711557266, guid: be5ebe09cc34a70478f55570220ee451, type: 2}
       propertyPath: m_RootOrder
-      value: 13
+      value: 12
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: be5ebe09cc34a70478f55570220ee451, type: 2}
@@ -6857,7 +6872,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1841149482
 Prefab:
