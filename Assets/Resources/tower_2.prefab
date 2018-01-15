@@ -140,6 +140,7 @@ MonoBehaviour:
     ThirdUpgradePercent: 0
   RangeIndicator: {fileID: 0}
   TowerConfig: {fileID: 0}
+  Upgrades: 000000000000000000000000
 --- !u!114 &114123852215280774
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -158,7 +159,7 @@ MonoBehaviour:
   ShootsPerSec: 1
   DamageMultiplier: 0
   AniWeapon: {fileID: 95508104517928250}
-  ProjectilePre: {fileID: 1042550331912990, guid: 1a9d3d7a4194d0641ac568cd1fe253d7,
+  ProjectilePre: {fileID: 1484069943795284, guid: 0c4bc54e7dcc1c145a4dd6c364c9b13c,
     type: 2}
   SMaster: {fileID: 0}
   target: {fileID: 0}
