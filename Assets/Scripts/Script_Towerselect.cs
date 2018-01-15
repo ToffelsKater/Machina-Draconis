@@ -57,7 +57,6 @@ public class Script_Towerselect : MonoBehaviour {
             SMaster.GetComponent<Script_SceneMaster>().Money -= SMaster.GetComponent<Script_SceneMaster>().TowerPrices[Tier - 1];
             Tower.GetComponent<Script_Tower>().Foundation = SMaster.GetComponent<Script_SceneMaster>().ActiveFoundation;
             //Object.Destroy(gameObject, 0.3f);
-            //Debug.Log("buildtower");
             DestroyPanel();
 
         }

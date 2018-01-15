@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+
+#pragma warning disable 0219
 public class Script_enemie01 : MonoBehaviour
 {
 
