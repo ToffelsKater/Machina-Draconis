@@ -1128,6 +1128,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   StartClick: 0
   SMaster: {fileID: 0}
+  Variables: {fileID: 0}
   dropdown: {fileID: 0}
 --- !u!114 &114693519980944168
 MonoBehaviour:

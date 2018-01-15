@@ -25,7 +25,7 @@ public class Script_Tower : MonoBehaviour {
     private Script_Weapon WeaponScript;
     private Script_Variables Variables;
 
-    private int[] Upgrades = new int[3];
+    public int[] Upgrades = new int[3];
     
 
     List<string> DropOptions = new List<string> { "Slow Verteilung" };
@@ -103,11 +103,7 @@ public class Script_Tower : MonoBehaviour {
                     switch (Upgrades[0])
                     {
                         case 0:
-                            //Debug.Log("Upgrade[0] = " + Upgrades[0]);
-                            //Debug.Log("Variables.TowerPrices[Upgrades[0]] = " + Variables.TowerPrices[Upgrades[0]]);
-                            //Debug.Log("Variables.UpgradePrices[Upgrades[0]]= " + Variables.UpgradePrices[Upgrades[0]]);
-                            //Debug.Log("(float)(Variables.UpgradePrices[Upgrades[0]] / 100) = " + (float)(Variables.UpgradePrices[Upgrades[0]] / 100f));
-                            //Debug.Log(( Variables.TowerPrices[Upgrades[0]] * (Variables.UpgradePrices[Upgrades[0]] / 100f)));
+                            Debug.Log("upgrade");
                             if (SMaster.Money >= Variables.TowerPrices[WeaponScript.TowerTier - 1] * (float)(Variables.UpgradePrices[Upgrades[0]] / 100f))
                             {
                                 SMaster.Money -= (int)(Variables.TowerPrices[WeaponScript.TowerTier - 1] * (float)(Variables.UpgradePrices[Upgrades[0]] / 100f));

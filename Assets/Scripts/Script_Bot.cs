@@ -5,6 +5,8 @@ using UnityEngine.UI;
 using System.IO;
 using UnityEngine.SceneManagement;
 
+
+#pragma warning disable 0219
 public class Script_Bot : MonoBehaviour {
     public static Script_Bot Instance;
     public int TestRun,Level;
