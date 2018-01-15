@@ -32,7 +32,7 @@ public class Script_SceneMaster : MonoBehaviour {
         Pause = false;
         ActiveFoundation = null;
         GMaster = GameObject.Find("GameMaster");
-        GameSpeed = 1f;
+        //GameSpeed = 1f;
         FoundationPlaceable = true;
     }
 
@@ -40,10 +40,13 @@ public class Script_SceneMaster : MonoBehaviour {
     {
         if (!Pause)
         {
+            Debug.Log("pausiert");
             Pause = true;
             Time.timeScale = 0f;
-            GameSpeed = 0;
+            Time.fixedDeltaTime = 0f;
+            //GameSpeed = 0;
             GameObject PauseMenu = Instantiate(Resources.Load("PauseCanvas")) as GameObject;
+            Debug.Log("pause durchgelaufen");
         }
     }
 
@@ -52,6 +55,7 @@ public class Script_SceneMaster : MonoBehaviour {
         Debug.Log("continue");
         Pause = false;
         Time.timeScale = 1.0f;
+        Time.fixedDeltaTime = 0.02f;
         GameSpeed = 1f;
     }
 
@@ -72,8 +76,8 @@ public class Script_SceneMaster : MonoBehaviour {
 
 	void Update () {
        // GameSpeed = TimeScale.value;
-        Time.timeScale = TimeScale.value;
-        Time.fixedDeltaTime = 0.02f*(1/TimeScale.value);
+        //Time.timeScale = TimeScale.value;
+        //Time.fixedDeltaTime = 0.02f*(1/TimeScale.value);
         //Time.timeScale = TimeScale.value;
 
         //if (cd <= 0)
@@ -90,6 +94,7 @@ public class Script_SceneMaster : MonoBehaviour {
         {
             PauseMenu();
         }
+
         MoneyDisplay.text = "Money : " + Money;
         HealthDisplay.text = "Health : " + PlayerHealth;
 

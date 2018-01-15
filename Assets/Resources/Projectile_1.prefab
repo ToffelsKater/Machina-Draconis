@@ -151,11 +151,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6c6999d23018ef34193adbf8f0a25a39, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  TowerTier: 0
+  TowerTier: 1
   speed: 4
   target: {fileID: 0}
   SMaster: {fileID: 0}
-  Weapon: {fileID: 0}
+  Weapon: {fileID: 1042550331912990}
   SlowPercentages: 190000003200000019000000
 --- !u!212 &212725551451447424
 SpriteRenderer:
