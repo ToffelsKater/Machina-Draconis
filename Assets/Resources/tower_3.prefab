@@ -67,7 +67,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1467499504417672}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.542, y: 2.165, z: 0}
+  m_LocalPosition: {x: -1.640269, y: -6.793581, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4473262764363536}
@@ -132,6 +132,7 @@ MonoBehaviour:
   Price: 0
   range: 4
   ShootsPerSec: 1
+  DamageMultiplier: 0
   AniWeapon: {fileID: 95880303440029508}
   ProjectilePre: {fileID: 1042550331912990, guid: 1a9d3d7a4194d0641ac568cd1fe253d7,
     type: 2}
@@ -148,8 +149,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 51e67728bbe885e4e9c871f72e74d634, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  SMaster: {fileID: 0}
-  RangeIndcator: {fileID: 0}
+  Foundation: {fileID: 0}
+  UpgradePercent:
+  - FirstUpgradePercent: 0
+    SecondUpgradePercent: 0
+    ThirdUpgradePercent: 0
+  - FirstUpgradePercent: 0
+    SecondUpgradePercent: 0
+    ThirdUpgradePercent: 0
+  - FirstUpgradePercent: 0
+    SecondUpgradePercent: 0
+    ThirdUpgradePercent: 0
+  RangeIndicator: {fileID: 0}
   TowerConfig: {fileID: 0}
 --- !u!212 &212109871544796312
 SpriteRenderer:

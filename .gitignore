@@ -3,6 +3,7 @@
 /[Oo]bj/
 /[Bb]uild/
 /[Bb]uilds/
+/LogFiles/
 /Assets/AssetStoreTools*
 
 # Visual Studio 2015 cache directory
@@ -33,3 +34,5 @@ sysinfo.txt
 *.apk
 *.unitypackage
 Assets/LogFiles/LogFile_13.txt
+*.txt
+Assets/LogFiles/LogFile_15.txt.meta
