@@ -158,7 +158,7 @@ MonoBehaviour:
   ShootsPerSec: 1
   DamageMultiplier: 0
   AniWeapon: {fileID: 95508104517928250}
-  ProjectilePre: {fileID: 1389402163945034, guid: 892e75f7aba00364cbba2764eb79e13b,
+  ProjectilePre: {fileID: 1042550331912990, guid: 1a9d3d7a4194d0641ac568cd1fe253d7,
     type: 2}
   SMaster: {fileID: 0}
   target: {fileID: 0}

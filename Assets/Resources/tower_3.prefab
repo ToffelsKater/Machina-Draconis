@@ -54,7 +54,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1727586704495424}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.008000135, y: 1.1700001, z: 0}
+  m_LocalPosition: {x: -0.034, y: 1.183, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4679987873735376}
@@ -67,7 +67,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1467499504417672}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.640269, y: -6.793581, z: 0}
+  m_LocalPosition: {x: 1.1688576, y: -3.7380867, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4473262764363536}
@@ -89,7 +89,7 @@ BoxCollider2D:
   m_Offset: {x: -0.0036623478, y: 0.5178566}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.4259259, y: 0.2468013}
+    pivot: {x: 0.44209984, y: 0.2441077}
     oldSize: {x: 2.5, y: 2.5}
     newSize: {x: 5, y: 5}
     adaptiveTilingThreshold: 0.5
@@ -134,7 +134,7 @@ MonoBehaviour:
   ShootsPerSec: 1
   DamageMultiplier: 0
   AniWeapon: {fileID: 95880303440029508}
-  ProjectilePre: {fileID: 1042550331912990, guid: 1a9d3d7a4194d0641ac568cd1fe253d7,
+  ProjectilePre: {fileID: 1389402163945034, guid: 892e75f7aba00364cbba2764eb79e13b,
     type: 2}
   SMaster: {fileID: 0}
   target: {fileID: 0}
