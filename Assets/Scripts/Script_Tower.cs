@@ -173,16 +173,16 @@ public class Script_Tower : MonoBehaviour {
                             }
                             break;
                         case 1:
-                            if (SMaster.Money >= Variables.TowerPrices[WeaponScript.TowerTier - 1] * (float)(Variables.UpgradePrices[Upgrades[1]] / 100f))
+                            if (SMaster.Money >= Variables.TowerPrices[WeaponScript.TowerTier - 1] * (float)(Variables.UpgradePrices[Upgrades[2]] / 100f))
                             {
-                                SMaster.Money -= (int)(Variables.TowerPrices[WeaponScript.TowerTier - 1] * (float)(Variables.UpgradePrices[Upgrades[1]] / 100f));
+                                SMaster.Money -= (int)(Variables.TowerPrices[WeaponScript.TowerTier - 1] * (float)(Variables.UpgradePrices[Upgrades[2]] / 100f));
                                 WeaponScript.DamageMultiplier += (WeaponScript.DamageMultiplier / 100) * UpgradePercent[2].SecondUpgradePercent;
                             }
                             break;
                         case 2:
-                            if (SMaster.Money >= Variables.TowerPrices[WeaponScript.TowerTier - 1] * (float)(Variables.UpgradePrices[Upgrades[1]] / 100f))
+                            if (SMaster.Money >= Variables.TowerPrices[WeaponScript.TowerTier - 1] * (float)(Variables.UpgradePrices[Upgrades[2]] / 100f))
                             {
-                                SMaster.Money -= (int)(Variables.TowerPrices[WeaponScript.TowerTier - 1] * (float)(Variables.UpgradePrices[Upgrades[1]] / 100f));
+                                SMaster.Money -= (int)(Variables.TowerPrices[WeaponScript.TowerTier - 1] * (float)(Variables.UpgradePrices[Upgrades[2]] / 100f));
                                 WeaponScript.DamageMultiplier += (WeaponScript.DamageMultiplier / 100) * UpgradePercent[2].ThirdUpgradePercent;
                             }
                             break;

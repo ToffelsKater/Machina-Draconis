@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
+using UnityEngine.UI;
 
 [System.Serializable]
 
@@ -10,12 +11,14 @@ public class Script_Towerselect : MonoBehaviour {
     public static Script_Towerselect instance;
 
     public float cd;
-    public GameObject SMaster;
     public Vector3 pos;
     public Transform[] Towers = new Transform[3];
 
     private bool StartClick;
     private GameObject RangeIndicator;
+
+    private Script_Variables Variables;
+    private Script_SceneMaster SMaster;
 
     void Awake()
     {
@@ -33,15 +36,30 @@ public class Script_Towerselect : MonoBehaviour {
 
 	void Start () {
         StartClick = false;
-        SMaster = GameObject.Find("SceneMaster");
+        SMaster = GameObject.Find("SceneMaster").GetComponent<Script_SceneMaster>();
+        Variables = GameObject.Find("SceneMaster").GetComponent<Script_Variables>();
         cd = 0.01f;
 
+        for (int i = 0; i <= 2; i++)
+        {
+            ButtonInteractable(i);
+        }
+
+    }
+
+    private void ButtonInteractable ( int TowerTier)
+    {
+        if (SMaster.Money < Variables.TowerPrices[TowerTier])
+        {
+            this.gameObject.transform.GetChild(0).GetChild(TowerTier + 1).GetComponent<Button>().interactable = false;
+
+        }
     }
 
     public void DestroyPanel()
     {
-        SMaster.GetComponent<Script_SceneMaster>().ActiveFoundation.GetComponent<Script_Foundation>().anim.SetBool("Pressed", false);
-        SMaster.GetComponent<Script_SceneMaster>().SetFoundation(null);
+        SMaster.ActiveFoundation.GetComponent<Script_Foundation>().anim.SetBool("Pressed", false);
+        SMaster.SetFoundation(null);
         HideRange();
         //Object.Destroy(gameObject, 0.3f);
         Destroy(this.gameObject);
@@ -49,13 +67,13 @@ public class Script_Towerselect : MonoBehaviour {
 
     public void BuildTower (int Tier)
     {
-        if (SMaster.GetComponent<Script_SceneMaster>().Money >= SMaster.GetComponent<Script_SceneMaster>().TowerPrices[Tier-1])
+        if (SMaster.Money >= SMaster.TowerPrices[Tier-1])
         {
             Transform Tower = Instantiate(Towers[Tier-1], pos, new Quaternion(0, 0, 0, 0));
             
-            SMaster.GetComponent<Script_SceneMaster>().SetFoundationStatus();
-            SMaster.GetComponent<Script_SceneMaster>().Money -= SMaster.GetComponent<Script_SceneMaster>().TowerPrices[Tier - 1];
-            Tower.GetComponent<Script_Tower>().Foundation = SMaster.GetComponent<Script_SceneMaster>().ActiveFoundation;
+            SMaster.SetFoundationStatus();
+            SMaster.Money -= SMaster.TowerPrices[Tier - 1];
+            Tower.GetComponent<Script_Tower>().Foundation = SMaster.ActiveFoundation;
             //Object.Destroy(gameObject, 0.3f);
             DestroyPanel();
 
@@ -65,7 +83,7 @@ public class Script_Towerselect : MonoBehaviour {
     public void ShowRange(int Tier)
     {
         float Range = Towers[Tier].transform.GetChild(0).GetComponent<Script_Weapon>().range;
-        RangeIndicator = Instantiate(Resources.Load("RangeIndicator"), SMaster.GetComponent<Script_SceneMaster>().ActiveFoundation.transform.position, SMaster.GetComponent<Script_SceneMaster>().ActiveFoundation.transform.rotation) as GameObject;
+        RangeIndicator = Instantiate(Resources.Load("RangeIndicator"), SMaster.ActiveFoundation.transform.position, SMaster.ActiveFoundation.transform.rotation) as GameObject;
         RangeIndicator.transform.localScale = new Vector3(Range * 2, Range * 2, 0);
     }
 

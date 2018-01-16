@@ -155,7 +155,7 @@ MonoBehaviour:
   TowerTier: 2
   Preference: 0
   Price: 0
-  range: 4
+  range: 3
   ShootsPerSec: 1
   DamageMultiplier: 0
   AniWeapon: {fileID: 95508104517928250}

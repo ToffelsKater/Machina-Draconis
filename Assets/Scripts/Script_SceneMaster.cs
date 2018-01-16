@@ -17,9 +17,6 @@ public class Script_SceneMaster : MonoBehaviour {
 
     public int[] TowerPrices = new int[3];
 
-
-    public bool HasChanged;
-
     //public float cd,oldframe;
 
     private int i;
@@ -40,7 +37,6 @@ public class Script_SceneMaster : MonoBehaviour {
     {
         if (!Pause)
         {
-            Debug.Log("pausiert");
             Pause = true;
             Time.timeScale = 0f;
             Time.fixedDeltaTime = 0f;
@@ -95,7 +91,7 @@ public class Script_SceneMaster : MonoBehaviour {
             PauseMenu();
         }
 
-        MoneyDisplay.text = "Money : " + Money;
+        MoneyDisplay.text = Money.ToString();
         HealthDisplay.text = "Health : " + PlayerHealth;
 
         if(PlayerHealth <= 0)

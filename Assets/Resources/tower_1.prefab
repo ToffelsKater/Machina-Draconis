@@ -140,6 +140,7 @@ MonoBehaviour:
     ThirdUpgradePercent: 1
   RangeIndicator: {fileID: 0}
   TowerConfig: {fileID: 0}
+  Upgrades: 000000000000000000000000
 --- !u!114 &114872652158636522
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -154,7 +155,7 @@ MonoBehaviour:
   TowerTier: 1
   Preference: 0
   Price: 0
-  range: 4
+  range: 3
   ShootsPerSec: 1
   DamageMultiplier: 0
   AniWeapon: {fileID: 95887455133082538}
