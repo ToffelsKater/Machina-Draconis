@@ -32,7 +32,7 @@ public class Script_SceneMaster : MonoBehaviour {
         Pause = false;
         ActiveFoundation = null;
         GMaster = GameObject.Find("GameMaster");
-        //GameSpeed = 1f;
+        GameSpeed = 1f;
         FoundationPlaceable = true;
     }
 
