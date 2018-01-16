@@ -13,9 +13,8 @@ public class Script_Variables : MonoBehaviour {
     public int[] UpgradePrices = new int[3];
     [Space(20)]
 
-    [Header("Upgrade Settings")]
+    [Header("Upgrade Values in Percent")]
     public UpgradeValues[] UpgradePercent = new UpgradeValues[3];
-
 
 
     [System.Serializable]
