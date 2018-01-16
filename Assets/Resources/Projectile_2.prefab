@@ -23,7 +23,7 @@ GameObject:
   - component: {fileID: 95969391425489392}
   - component: {fileID: 114602792551586444}
   m_Layer: 0
-  m_Name: Bubble
+  m_Name: Projectile_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -75,7 +75,7 @@ MonoBehaviour:
   target: {fileID: 0}
   SMaster: {fileID: 0}
   Weapon: {fileID: 0}
-  SlowPercentages: 000000000000000000000000
+  SlowPercentages: 190000003200000019000000
 --- !u!212 &212796320082002060
 SpriteRenderer:
   m_ObjectHideFlags: 1
