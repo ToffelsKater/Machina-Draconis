@@ -9,6 +9,9 @@ public class Script_Weapon : MonoBehaviour {
     public Animator AniWeapon;
     public GameObject ProjectilePre,SMaster,target;
 
+    [Range(0,1)]
+    public float RangeSearchReduction;
+
     private float countdown, angle, lookangle;
     private List<GameObject> Projectiles = new List<GameObject>();
 
@@ -59,7 +62,7 @@ public class Script_Weapon : MonoBehaviour {
         float HealthOld = 0, HealthNew;
         int IndexOld = 0, IndexNew;
         GameObject tar = null;
-        Collider2D[] InRange = Physics2D.OverlapCircleAll(this.transform.position, range);
+        Collider2D[] InRange = Physics2D.OverlapCircleAll(this.transform.position, range*RangeSearchReduction);
         List<GameObject> Enemies = new List<GameObject>();
         foreach (Collider2D other in InRange)
         {
