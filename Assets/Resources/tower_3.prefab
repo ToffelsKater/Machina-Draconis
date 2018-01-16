@@ -131,7 +131,7 @@ MonoBehaviour:
   Preference: 0
   Price: 0
   range: 4
-  ShootsPerSec: 1
+  ShootsPerSec: 0.5
   DamageMultiplier: 0
   AniWeapon: {fileID: 95880303440029508}
   ProjectilePre: {fileID: 1389402163945034, guid: 892e75f7aba00364cbba2764eb79e13b,
@@ -162,6 +162,7 @@ MonoBehaviour:
     ThirdUpgradePercent: 0
   RangeIndicator: {fileID: 0}
   TowerConfig: {fileID: 0}
+  Upgrades: 000000000000000000000000
 --- !u!212 &212109871544796312
 SpriteRenderer:
   m_ObjectHideFlags: 1
