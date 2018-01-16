@@ -175,7 +175,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: -13
+  m_SortingOrder: 13
   m_Sprite: {fileID: 21300000, guid: 9a914c6a5fbc9934b8e524e21da1af03, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -898,7 +898,7 @@ Prefab:
     - target: {fileID: 114199009767301400, guid: 0e3dc16ebd26b644aa5bb65d6b157e4b,
         type: 2}
       propertyPath: Waves.Array.data[0].Pause
-      value: 15
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 114199009767301400, guid: 0e3dc16ebd26b644aa5bb65d6b157e4b,
         type: 2}
@@ -956,6 +956,12 @@ Prefab:
       propertyPath: Factor
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 114199009767301400, guid: 0e3dc16ebd26b644aa5bb65d6b157e4b,
+        type: 2}
+      propertyPath: Waves.Array.data[0].EnemieType
+      value: 
+      objectReference: {fileID: 1691378247900282, guid: 9a331f28e358c40428403aa89d4540db,
+        type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 0e3dc16ebd26b644aa5bb65d6b157e4b, type: 2}
   m_IsPrefabParent: 0
@@ -1690,30 +1696,6 @@ Prefab:
       propertyPath: m_Pivot.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 224841911357988872, guid: 6ac6d29cd88fe0648b1f16c4d7e366e6,
-        type: 2}
-      propertyPath: m_AnchorMax.y
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 224285669653076062, guid: 6ac6d29cd88fe0648b1f16c4d7e366e6,
-        type: 2}
-      propertyPath: m_AnchorMax.y
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 224885391196157992, guid: 6ac6d29cd88fe0648b1f16c4d7e366e6,
-        type: 2}
-      propertyPath: m_AnchoredPosition.x
-      value: 164.9
-      objectReference: {fileID: 0}
-    - target: {fileID: 1051058906009240, guid: 6ac6d29cd88fe0648b1f16c4d7e366e6, type: 2}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 114872313086059526, guid: 6ac6d29cd88fe0648b1f16c4d7e366e6,
-        type: 2}
-      propertyPath: m_TargetGraphic
-      value: 
-      objectReference: {fileID: 498442454}
     - target: {fileID: 114872313086059526, guid: 6ac6d29cd88fe0648b1f16c4d7e366e6,
         type: 2}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
@@ -1724,25 +1706,19 @@ Prefab:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
       objectReference: {fileID: 1914786974}
-    - target: {fileID: 114872313086059526, guid: 6ac6d29cd88fe0648b1f16c4d7e366e6,
+    - target: {fileID: 224841911357988872, guid: 6ac6d29cd88fe0648b1f16c4d7e366e6,
         type: 2}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: PauseMenu
+      propertyPath: m_AnchorMax.y
+      value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 114872313086059526, guid: 6ac6d29cd88fe0648b1f16c4d7e366e6,
+    - target: {fileID: 224285669653076062, guid: 6ac6d29cd88fe0648b1f16c4d7e366e6,
         type: 2}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
-      value: PlayOneShot
+      propertyPath: m_AnchorMax.y
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 6ac6d29cd88fe0648b1f16c4d7e366e6, type: 2}
   m_IsPrefabParent: 0
---- !u!114 &498442454 stripped
-MonoBehaviour:
-  m_PrefabParentObject: {fileID: 114940391401841850, guid: 6ac6d29cd88fe0648b1f16c4d7e366e6,
-    type: 2}
-  m_PrefabInternal: {fileID: 498442453}
-  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
 --- !u!1001 &499021888
 Prefab:
   m_ObjectHideFlags: 0
@@ -2233,7 +2209,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingOrder: 28
   m_Sprite: {fileID: 21300000, guid: 9a914c6a5fbc9934b8e524e21da1af03, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -6999,7 +6975,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: -1
+  m_SortingOrder: 16
   m_Sprite: {fileID: 21300000, guid: 94581ebbad0f8a44ea61ceecca725ad1, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -8756,7 +8732,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 3
+  m_SortingOrder: 32
   m_Sprite: {fileID: 21300000, guid: 94581ebbad0f8a44ea61ceecca725ad1, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0

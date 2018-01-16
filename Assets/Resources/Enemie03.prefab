@@ -54,7 +54,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1445386287579616}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 1.3, z: 0}
+  m_LocalPosition: {x: 0, y: 1, z: 0}
   m_LocalScale: {x: 2.6848388, y: 2.602229, z: 8.261047}
   m_Children: []
   m_Father: {fileID: 4960997845645810}
@@ -67,8 +67,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1691378247900282}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -9.01, y: -3.99, z: 0}
-  m_LocalScale: {x: 0.33144832, y: 0.33144817, z: 0.33144817}
+  m_LocalPosition: {x: -3.379172, y: -0.52, z: 0}
+  m_LocalScale: {x: 0.32183558, y: 0.32183552, z: 0.32183552}
   m_Children:
   - {fileID: 4654513943354330}
   m_Father: {fileID: 0}
@@ -151,15 +151,11 @@ MonoBehaviour:
   Index: 0
   EnemieTier: 3
   Slowed: 0
-  speed: 0.5
-<<<<<<< HEAD
-  health: 50
-=======
-  health: 70
->>>>>>> 031b991a85ed5a96dca50c93edc0085d7d1afbfc
-  reward: 15
+  speed: 1
+  health: 28
+  reward: 10
   SlowTimer: 0
-  Damages: 020000000100000005000000
+  Damages: 050000000300000004000000
   AniMouse: {fileID: 95248477159014670}
   SMaster: {fileID: 0}
 --- !u!212 &212583447706623878
