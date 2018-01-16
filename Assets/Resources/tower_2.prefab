@@ -163,6 +163,7 @@ MonoBehaviour:
     type: 2}
   SMaster: {fileID: 0}
   target: {fileID: 0}
+  RangeSearchReduction: 0.578
 --- !u!212 &212679198403471798
 SpriteRenderer:
   m_ObjectHideFlags: 1
